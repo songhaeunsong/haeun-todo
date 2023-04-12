@@ -5,4 +5,19 @@
   border: 3px solid #d0cefd;
   border-radius: 20px;
   height: 50vh;
+  overflow: auto;
+}
+.todo-list::-webkit-scrollbar {
+  width: 10px;
+}
+
+.todo-list::-webkit-scrollbar-thumb {
+  height: 30%;
+  background: #908bf8;
+
+  border-radius: 10px;
+}
+
+.todo-list::-webkit-scrollbar-track {
+  background: rgba(33, 122, 244, 0.1);
 }

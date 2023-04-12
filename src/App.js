@@ -3,8 +3,7 @@ import "./App.css";
 import Template from "./Template";
 import TodoList from "./TodoList";
 import TodoInput from "./TodoInput";
-
-let nextId = 1;
+import { v4 as uuidv4 } from "uuid";
 
 function App() {
   const [selectedTodo, setSelectedTodo] = useState(null);
@@ -15,16 +14,16 @@ function App() {
     if (text === "") {
       return alert("제목을 입력해주세요!");
     } else {
+      let uuid = uuidv4();
       const todo = {
-        id: nextId,
+        id: uuid,
         text,
         subtext,
         tags,
         date,
         checked: false,
       };
-      setTodos([...todos, todo]);
-      nextId++;
+      setTodos([todo, ...todos]);
     }
   };
 
@@ -56,6 +55,7 @@ function App() {
     );
     setSelectedTodo(null);
   };
+  console.log(todos[todos.length - 1]);
   return (
     <Template>
       <TodoInput
