@@ -34,7 +34,7 @@ const TodoInput = ({ onInputTodo, selectedTodo, onRemove, onUpdate }) => {
           setTagError(true);
           setTimeout(() => setTagError(false), 1500);
         } else {
-          setTags(tags.concat(tag));
+          setTags(tags.concat(`${tag} `));
           setTag("");
         }
       }

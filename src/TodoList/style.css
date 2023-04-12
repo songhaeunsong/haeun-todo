@@ -8,16 +8,5 @@
   overflow: auto;
 }
 .todo-list::-webkit-scrollbar {
-  width: 10px;
-}
-
-.todo-list::-webkit-scrollbar-thumb {
-  height: 30%;
-  background: #908bf8;
-
-  border-radius: 10px;
-}
-
-.todo-list::-webkit-scrollbar-track {
-  background: rgba(33, 122, 244, 0.1);
+  width: 0;
 }
