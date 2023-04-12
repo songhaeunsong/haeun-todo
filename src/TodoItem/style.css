@@ -1,0 +1,50 @@
+.todo-item {
+  padding: 0.5rem;
+  margin: 10px 15px;
+  box-shadow: 3px 3px 7px 1px #b4b2cc;
+  border-radius: 15px;
+}
+.content {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.content svg {
+  font-size: 2rem;
+  color: #d0cefd;
+  margin: 0 25px;
+}
+.content .text {
+  margin-left: 1vw;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: black;
+}
+.content.checked .text {
+  text-decoration: line-through #1f1b64;
+  opacity: 0.6;
+  margin-left: 2vw;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.list--text {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+  color: black;
+  font-size: 14px;
+  font-weight: 800;
+  margin: 5px;
+}
+.list--subtext {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: gray;
+  font-size: 10px;
+  margin: 5px;
+}
+.list--date {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #1f1b64;
+  font-size: 10px;
+  font-weight: 500;
+  margin: 5px;
+}
