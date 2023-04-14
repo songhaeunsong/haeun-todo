@@ -1,0 +1,10 @@
+[
+  {
+    "id": 1,
+    "text": "예시입니다.",
+    "subtext": "입력창에 새로운 투두를 입력해보세요",
+    "tags": ["react"],
+    "date": "",
+    "checked": false
+  }
+]

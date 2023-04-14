@@ -55,7 +55,14 @@ function App() {
     );
     setSelectedTodo(null);
   };
-  console.log(todos[todos.length - 1]);
+
+  useEffect(() => {
+    Promise.all([fetch("/list.json"), fetch("/list2.json")])
+      .then(([res1, res2]) => Promise.all([res1.json(), res2.json()]))
+      .then(([data1, data2]) => setTodos([...data1, ...data2]))
+      .catch((error) => console.error(error));
+  }, []);
+
   return (
     <Template>
       <TodoInput
